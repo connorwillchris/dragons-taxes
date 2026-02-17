@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-import sys
+#import sys
 
 current_specials  = ord(" ")
 current_uppercase = ord("A")
@@ -19,8 +19,11 @@ def compare_to_currents(value: int, current: int):
     else:
         return f". {value}\n"
 
-if len(sys.argv) >= 2:
-    argument = sys.argv[1]
+# minor change, made it use STDIN input
+argument = input()
+
+if True:
+    #argument = sys.argv[1]
 
     # for each character in the string...
     for c in argument:
